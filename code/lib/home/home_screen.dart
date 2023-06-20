@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
       'name': 'CASH\nRECOGNITION',
       'viewScreen': CashRecognitionMainScreen(),
       'color': const Color(0xff23BD52),
-      'imagePath': 'assets/cash_recognition/images/note.png'
+      'imagePath': 'assets/images/note.png'
     }
   ];
 

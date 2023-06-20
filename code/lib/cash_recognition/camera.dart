@@ -1,7 +1,8 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import '../utils/camera.dart';
 import '../../bloc/classifier_bloc.dart';
-
+import 'package:image_picker/image_picker.dart';
 class CashCamera extends CameraApp {
   /// Camera Widget for Cash Recognition component inheriting from CameraApp
   @override
@@ -9,20 +10,34 @@ class CashCamera extends CameraApp {
 }
 
 class _CashCameraState extends CameraAppState {
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: initController,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          /// GestureDetector wraps entire Camera Widget and classifies on tap
-          return GestureDetector(
-              excludeFromSemantics: true,
-              child: Tooltip(
-                  // add Tooltip for screen readers
-                  message: "Double Tap to Identify Note",
-                  child: cameraWidget(context)),
-              onTap: captureAndClassify);
+          return Column(
+            children: [
+              Expanded(
+                child: Stack(
+                  children: [
+                    cameraWidget(context),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 16.0),
+                        child: FloatingActionButton(
+                          onPressed: captureAndClassify,
+                          child: Icon(Icons.camera),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          );
         } else {
           return const Center(
             child: CircularProgressIndicator(),

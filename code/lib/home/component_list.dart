@@ -10,7 +10,7 @@ class ComponentList extends StatelessWidget {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       leading: const Icon(Icons.remove_red_eye),
-      title: const Text("Drishti"),
+      title: const Text("Deteccion de bolivianos"),
     );
 
     // allocate equal height for each component

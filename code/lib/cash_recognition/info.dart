@@ -5,12 +5,10 @@ import '../utils/colors.dart';
 
 // Instructions and their corresponding audio feedbacks
 const _instructionsList = [
-  ["Getting started", "cash_recognition/instructions/1.mp3"],
-  ["Audio Feedback", "cash_recognition/instructions/2.mp3"],
-  ["History Feature", "cash_recognition/instructions/3.mp3"],
-  ["Placement of Notes", "cash_recognition/instructions/4.mp3"],
-  ["More Queries", "cash_recognition/instructions/5.mp3"],
-  ["Additional Info", "cash_recognition/instructions/6.mp3"],
+  ["Inicio", "sounds/sound_instruction_one.mp3"],
+  ["Deteccion de billetes", "sounds/sound_instruction_two.mp3"],
+  ["El historial", "sounds/sound_instruction_history_3.mp3"],
+  ["Lista de billetes", "sounds/sound_instruction_historyList_3.mp3"],
 ];
 
 class InstructionPage extends StatefulWidget {
