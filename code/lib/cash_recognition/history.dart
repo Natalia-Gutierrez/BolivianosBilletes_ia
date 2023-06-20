@@ -175,7 +175,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                                             child: Text(
                                               'Bs. ${currentNote?.value.toString()}',
                                               semanticsLabel:
-                                                  "${currentNote?.label} rupees",
+                                                  "${currentNote?.label} bolivianos",
                                               style: GoogleFonts.poppins(
                                                   textStyle: TextStyle(
                                                       color: defaultTextColor,

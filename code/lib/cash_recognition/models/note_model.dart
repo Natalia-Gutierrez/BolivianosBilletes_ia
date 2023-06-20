@@ -3,33 +3,33 @@ import '../../utils/colors.dart';
 
 class Note {
   static const Map<int, String> _intToNote = {
-    0: 'diez',
-    1: 'veinte',
-    2: 'cincuenta',
-    3: 'cien',
-    4: 'doscientos',
+    0: 'b10',
+    1: 'b20',
+    2: 'b50',
+    3: 'b100',
+    4: 'b200',
   };
   static const Map<String, int> _noteToInt = {
-    'diez': 0,
-    'veinte': 1,
-    'cincuenta': 2,
-    'cien': 3,
-    'doscientos': 4,
+    'b10': 0,
+    'b20': 1,
+    'b50': 2,
+    'b100': 3,
+    'b200': 4,
   };
   static const Map<String, int> _noteToValues = {
-    'diez': 10,
-    'veinte': 20,
-    'cincuenta': 50,
-    'cien': 100,
-    'doscientos': 200,
+    'b10': 10,
+    'b20': 20,
+    'b50': 50,
+    'b100': 100,
+    'b200': 200,
   };
 
   static final Map<String, Color> noteToColor = {
-    'diez': diezColor,
-    'veinte': veinteColor,
-    'cincuenta': cincuentaColor,
-    'cien': cienColor,
-    'doscientos': dcienColor,
+    'b10': diezColor,
+    'b20': veinteColor,
+    'b50': cincuentaColor,
+    'b100': cienColor,
+    'b200': dcienColor,
   };
 
   static const TABLE_NAME = "notes";

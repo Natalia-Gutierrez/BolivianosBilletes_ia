@@ -8,7 +8,7 @@ import 'package:flutter_pytorch/flutter_pytorch.dart';
 import 'package:flutter_pytorch/pigeon.dart';
 
 String audiofile = "assets/sounds";
-String _modelPath = "assets/cash_recognition/models/nrs_model/model.tflite";
+String _modelPath = "assets/models/model.pt";
 String _labelPath = "assets/labels/labels.txt";
 late ModelObjectDetection _objectModel;
 bool objectDetection = false;
