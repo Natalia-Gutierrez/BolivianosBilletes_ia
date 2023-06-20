@@ -19,6 +19,7 @@ class CameraAppState extends State<CameraApp> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    initCamera().then((value) {});
     WidgetsBinding.instance?.addObserver(this);
   }
 
