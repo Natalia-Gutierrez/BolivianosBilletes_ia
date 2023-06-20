@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../cash_recognition/camera.dart';
 import '../utils/colors.dart';
+import 'history.dart';
+import 'info.dart';
 
 class CashRecognitionMainScreen extends StatelessWidget {
   @override
@@ -14,15 +16,15 @@ class CashRecognitionMainScreen extends StatelessWidget {
             icon: Icons.info_outline,
             alignment: Alignment.topLeft,
             onPressed: () {
-              Navigator.of(context).pushNamed('/instructions');
+              Navigator.push(context, MaterialPageRoute(builder: (context) => InstructionPage()));
             },
           ),
           AlignedButton(
-            toolTip: "Historial",
+            toolTip: "History",
             icon: Icons.history,
             alignment: Alignment.topRight,
             onPressed: () {
-              Navigator.of(context).pushNamed('/history');
+              Navigator.push(context, MaterialPageRoute(builder: (context) => HistoryScreen()));
             },
           ),
         ],

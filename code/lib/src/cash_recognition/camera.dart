@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import '../utils/camera.dart';
-import '../../bloc/classifier_bloc.dart';
+import '../bloc/classifier_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 class CashCamera extends CameraApp {
   /// Camera Widget for Cash Recognition component inheriting from CameraApp

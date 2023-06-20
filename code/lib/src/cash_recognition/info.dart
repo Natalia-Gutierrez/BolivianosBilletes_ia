@@ -25,7 +25,7 @@ class _InstructionPageState extends State<InstructionPage> {
         appBar: AppBar(
           title: Center(
             child: Text(
-              "INFORMATION",
+              "INFORMACION",
               style: GoogleFonts.poppins(
                 textStyle:
                     const TextStyle(fontWeight: FontWeight.w600, fontSize: 25),
